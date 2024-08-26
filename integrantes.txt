@@ -1,0 +1,16 @@
+Algoritmos e heurísticas para problemas clássicos:
+Clique Máxima (CM)
+
+Integrantes do Grupo:
+
+1. Davi Silveira Siqueira 
+    - Número de Matrícula: 202210926
+
+2. João Pedro Nogueira Lucas 
+    - Número de Matrícula: 202210087
+
+3. Thiago Melato 
+    - Número de Matrícula: 202210077
+
+4. Rhuan Campideli Borges 
+    - Número de Matrícula: 202210075
