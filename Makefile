@@ -25,8 +25,8 @@ forca_lib.o: src/forca/forca_lib.cpp src/forca/forca_lib.h
 heuristica_lib.o: src/heuristica/heuristica_lib.cpp src/heuristica/heuristica_lib.h
 	$(CC) -c -I src/ src/heuristica/heuristica_lib.cpp -o heuristica_lib.o
 
-gerador.o: testes/gerador.cpp
-	$(CC) -c -I testes/ testes/gerador.cpp -o gerador.o
+gerador.o: src/gerador.cpp
+	$(CC) -c -I src/ src/gerador.cpp -o gerador.o
 
 run: runforca runheuristica
 
