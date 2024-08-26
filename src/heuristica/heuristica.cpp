@@ -13,13 +13,13 @@ int main() {
     for (int i = 0; i < numArestas; i++) {
         int u, v;
         cin >> u >> v;
-        grafo.addAresta(u, v);
+        grafo.addAresta(u - 1, v - 1);
     }
 
     vector<int> cliqueMaxima = getCliqueMaxima(grafo);
 
     for (int v : cliqueMaxima) {
-        cout << v << " ";
+        cout << v + 1 << " ";
     }
     cout << endl;
 
