@@ -43,7 +43,7 @@ int main() {
     srand(time(0)); // Inicializa o gerador de números aleatórios.
 
     int minVertices = 5; // Valor mínimo para o número de vértices.
-    int maxVertices = 50; // Valor máximo para o número de vértices.
+    int maxVertices = 1200; // Valor máximo para o número de vértices.
     
     int numVertices = rand() % (maxVertices - minVertices + 1) + minVertices; // Número aleatório de vértices.
     int numArestas = rand() % ((numVertices * (numVertices - 1)) / 2 - (numVertices - 1)) + (numVertices - 1); // Número aleatório de arestas.
