@@ -1,9 +1,0 @@
-Força-Bruta:
-2 3 4 5 11 17 20 24 26 
-Tempo: 1.36061ms
-n=9
-
-Heuristica:
-3 17 26 6 24 20 2 11 10 
-Tempo: 0.046253ms
-n=9
