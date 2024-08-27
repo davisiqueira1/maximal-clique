@@ -54,5 +54,7 @@ std::vector<int> getCliqueMaxima(Grafo& grafo) {
         }
     }
 
+    sort(clique.begin(), clique.end());
+
     return clique;
 }
