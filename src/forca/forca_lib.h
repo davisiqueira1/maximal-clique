@@ -6,4 +6,5 @@ struct Grafo {
     Grafo(int v);
 };
 
-std::vector<int> getCliqueMaxima(Grafo& grafo);
+bool isClique(const Grafo& grafo, const std::vector<int>& conjunto);
+std::vector<int> encontrarCliqueMaxima(const Grafo& grafo);

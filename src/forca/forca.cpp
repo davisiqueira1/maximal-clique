@@ -1,5 +1,6 @@
-#include <iostream>
 #include <chrono>
+#include <iostream>
+
 #include "forca_lib.h"
 
 using namespace std;
@@ -16,7 +17,7 @@ int main() {
         grafo.ma[v - 1][u - 1] = 1;
     }
     auto t1 = chrono::high_resolution_clock::now();
-    vector<int> cliqueMaxima = getCliqueMaxima(grafo);
+    vector<int> cliqueMaxima = encontrarCliqueMaxima(grafo);
     auto t2 = chrono::high_resolution_clock::now();
     for (int i = 0; i < cliqueMaxima.size(); i++) {
         cout << cliqueMaxima[i] + 1 << " ";
