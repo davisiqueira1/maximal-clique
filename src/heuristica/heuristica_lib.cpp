@@ -16,7 +16,7 @@ const std::vector<int>& Grafo::getVizinhos(int v) const {
     return adjacencias[v];
 }
 
-// função para verificar se um conjunto de vértices forma uma clique
+// Função para verificar se um conjunto de vértices forma uma clique
 bool ehClique(const Grafo& grafo, const std::vector<int>& vertices) {
     for (int i = 0; i < vertices.size(); i++) {
         for (int j = i + 1; j < vertices.size(); j++) {
@@ -30,7 +30,7 @@ bool ehClique(const Grafo& grafo, const std::vector<int>& vertices) {
     return true;
 }
 
-// ordena os vértices pelo grau em ordem decrescente
+// Ordena os vértices pelo grau em ordem decrescente
 bool ordenarVertices(Grafo& grafo, int u, int v) {
     return grafo.getVizinhos(u).size() > grafo.getVizinhos(v).size();
 }
@@ -46,7 +46,7 @@ std::vector<int> getCliqueMaxima(Grafo& grafo) {
     sort(vertices.begin(), vertices.end(),
          [&grafo](int u, int v) { return ordenarVertices(grafo, u, v); });
 
-    // tenta adicionar vértices à clique, seguindo a ordem dos graus
+    // Tenta adicionar vértices à clique, seguindo a ordem dos graus
     for (int v : vertices) {
         clique.push_back(v);
         if (!ehClique(grafo, clique)) {
